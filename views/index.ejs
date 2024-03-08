@@ -44,7 +44,7 @@
                             <!-- Left side: Book Image -->
                             <div class="book-image">
                                 <!-- Book Cover Image -->
-                                <img class="cover" src="https://covers.openlibrary.org/b/isbn/<%=book.isbn%>-M.jpg" alt="Book Cover of <%=book.title%>"/>
+                                <img class="cover" src="https://covers.openlibrary.org/b/isbn/<%=book.isbn%>-M.jpg" alt="Book Cover of <%=book.title%>" onerror="this.onerror=null;this.src='/path/to/placeholder.jpg'; this.alt='No Cover Available'"/>
                             </div>
                             
                             <!-- Right side: Description, Rating, Delete, Edit -->
