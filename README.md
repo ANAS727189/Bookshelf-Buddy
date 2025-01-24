@@ -1,37 +1,66 @@
-# Book Notes
-This website allows user to add, update, delete books to the application. It saves the books to PostgreSQL database. Open Library API is used to fetch Book Cover Image based on ISBN.
+# 📚 Bookshelf Buddy
+
+## 🌟 Project Overview
+
+Bookshelf Buddy is a full-stack web application for managing your personal book collection. Easily add, edit, delete, and track your favorite books with a simple and intuitive interface.
+
+## ✨ Features
+
+- 📖 Add new books to your collection
+- 🖊️ Edit book details
+- 🗑️ Remove books from your library
+- 🌐 Dynamically fetch book cover images
+- 📊 Rate and track your books
+
+## 🛠️ Technologies Used
+
+- Node.js
+- Express.js
+- PostgreSQL
+- EJS Templating
+- Body-Parser
+- OpenLibrary API (for book covers)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- PostgreSQL
+- npm
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/bookshelf-buddy.git
+   ```
+
+2. Install dependencies
+   ```bash
+   cd bookshelf-buddy
+   npm install
+   ```
+
+3. Setup Database
+   - Create a PostgreSQL database named 'books'
+   - Run the queries from `queries.sql`
+
+4. Configure Database Connection
+   - Update database credentials in `index.js`
+
+5. Start the server
+   ```bash
+   node index.js
+   ```
+
+## 🖥️ Usage
+
+- Add a new book by filling out the form
+- View your book collection
+- Edit book details
+- Delete books from your collection
+- Book covers automatically fetch from OpenLibrary
 
 
-# Prerequisites
-* Node.js installed on your system
-* PostgreSQL database installed and running
-* pg Node.js package installed
-* Express Node.js package installed
-* body-parser Node.js package installed
-
-# Features
-* CRUD Methods used.
-* Saves to PostgreSQL.
-* Open Library API used.
-
-# Installation
-* Clone the repository.
-* Install the required dependencies using "npm i".
-* Create the necessary tables in your PostgreSQL database. You can copy the SQL queries from the queries.sql file and execute them in your database management tool.
-* Configure the database connection settings in the dbConfig object in the index.js file. Replace the placeholder values with your database credentials.
-
-# Usage
-* Run the application using "nodemon index.js".
-* Open "localhost:3000" on your browser.
-
-# Contribution
-* Fork the repository to your GitHub account.
-* Clone your forked repository.
-* Create a new branch for your contribution.
-* Make your changes, commit them, and push to your forked repository.
-* Create a pull request (PR) to the main repository. Provide a descriptive title and details about your changes.
-* Your PR will be reviewed, and once approved, it will be merged into the main project.
-
-Thank You!
-
-
+Happy Reading! 📖✨
